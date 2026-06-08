@@ -11,3 +11,7 @@ test-results/
 bin/
 .certs/
 *.tgz
+.vercel/
+.env
+.env.*
+!.env.example

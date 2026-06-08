@@ -1,0 +1,21 @@
+{
+  "name": "@projectboard/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check src/",
+    "lint:fix": "prettier --write src/",
+    "test": "echo 'no unit tests yet'"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vercel": "^39.0.0",
+    "prettier": "^3.4.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "==> pre-commit: typecheck (ui)"
+(cd ui && npx tsc --noEmit)
+
+echo "==> pre-commit: typecheck (api)"
+(cd api && npx tsc --noEmit)
+
+echo "==> pre-commit: lint (ui)"
+(cd ui && npx prettier --check src/)
+
+echo "==> pre-commit: lint (api)"
+(cd api && npx prettier --check src/)

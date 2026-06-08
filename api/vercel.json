@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "src/functions/**/*.ts": {
+      "runtime": "@vercel/node@4"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/src/functions/$1" }
+  ]
+}
